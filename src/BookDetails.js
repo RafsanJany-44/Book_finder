@@ -30,8 +30,7 @@ const BookDetails = ({ match, history }) => {
           )}
         </div>
         <div className="ten wide column">
-          {/* <div className="ui header">{book.title}</h3>
-          <h4 className="ui sub header">{book.subtitle}</h4> */}
+          
           <h3 className="ui header">
             <div className="content">
               {book.title}
