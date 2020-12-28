@@ -20,12 +20,12 @@ const BookDetails = ({ match, history }) => {
           {book.imageLinks == undefined ? (
             <img
               src="https://picsum.photos/id/1040/200/300"
-              style={{ height: "500px", marginRight: "200px" }}
+              style={{ height: "512px", marginRight: "212px" }}
             />
           ) : (
             <img
               src={book.imageLinks.thumbnail}
-              style={{ height: "500px", marginRight: "100px" }}
+              style={{ height: "512px", marginRight: "112px" }}
             />
           )}
         </div>
@@ -40,7 +40,7 @@ const BookDetails = ({ match, history }) => {
           {book.authors == "" ? (
             ""
           ) : (
-            <div style={{ display: "inline-flex", marginBottom: "10px" }}>
+            <div style={{ display: "inline-flex", marginBottom: "12px" }}>
               <i className="user icon"></i>
               <div className="ui content">
                 <h4>Author(s):</h4>
@@ -51,7 +51,7 @@ const BookDetails = ({ match, history }) => {
           {book.description == undefined ? (
             ""
           ) : (
-            <div style={{ display: "inline-flex", marginBottom: "10px" }}>
+            <div style={{ display: "inline-flex", marginBottom: "12px" }}>
               <h4>Description:</h4>
               <p>{book.description}</p>
             </div>
@@ -59,7 +59,7 @@ const BookDetails = ({ match, history }) => {
           {book.language == undefined ? (
             ""
           ) : (
-            <div style={{ marginBottom: "10px" }}>
+            <div style={{ marginBottom: "12px" }}>
               <h4>
                 Language: <div className="ui large label">{book.language}</div>
               </h4>
@@ -68,7 +68,7 @@ const BookDetails = ({ match, history }) => {
           {book.publishedDate == undefined ? (
             ""
           ) : (
-            <div style={{ display: "inline-flex", marginBottom: "10px" }}>
+            <div style={{ display: "inline-flex", marginBottom: "12px" }}>
               <i class="calendar  icon"></i>
               <div className="ui content">
                 <h4>Published Date: {book.publishedDate}</h4>
@@ -78,7 +78,7 @@ const BookDetails = ({ match, history }) => {
             </div>
           )}
 
-          <div style={{ marginTop: "10%" }}>
+          <div style={{ marginTop: "12%" }}>
             <button
               className="ui primary button"
               onClick={() => history.goBack()}
