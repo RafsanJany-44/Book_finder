@@ -62,7 +62,7 @@ const BookFinder = ({ match, history }) => {
         handleChangeInput={handleChangeInput}
         handleChangeDropdown={handleChangeDropdown}
       />
-      <div className="ui four column grid" style={{ padding: "50px" }}>
+      <div className="ui four column grid" style={{ padding: "512px" }}>
         {Array.isArray(Books)
           ? Books.map((book, i) => {
               return <BookCard data={book} key={i} />;

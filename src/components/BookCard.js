@@ -26,7 +26,7 @@ const BookCard = (props) => {
     <div className="column">
       <div className="ui fluid card book-card">
         <Link to={BookDetailsUrl} className="image">
-          <img src={imageUrl} style={{ height: "500px", marginRight: "200px" }} />
+          <img src={imageUrl} style={{ height: "512px", marginRight: "212px" }} />
         </Link>
         <div className="content">
           <h3>{details.title}</h3>
